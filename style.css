@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,900;1,8..144,300;1,8..144,700&display=swap');
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto Serif', serif;
 }
 
 .banner {
@@ -12,6 +15,7 @@ body{
     display: flex;
     font-size: 24px;
     text-align: center;
+    position: relative;
 }
 
 .left-content, .right-content {
@@ -21,6 +25,76 @@ body{
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.left-content{
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.Welcome-Text{
+    font-size: 100px;
+    font-weight: bold;
+    color: #ff9900; /* Choose a color that matches your design */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    letter-spacing: 2px; /* Adjust to stretch the letters a little */
+    display: inline-block; /* Allow for scaling using transform */
+    background-color: transparent;
+  border: none;
+    transform: scaleY(1.2); /* Adjust the scale factor for horizontal stretching */
+    
+}
+
+.Welcome-Text:hover{
+    cursor: pointer;    
+}
+
+.Description{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    letter-spacing: 2px; /* Adjust to stretch the letters a little */
+    display: inline-block; /* Allow for scaling using transform */
+    transform: scaleY(1.2); /* Adjust the scale factor for horizontal stretching */
+}
+
+
+
+.thinking-bubble,.thinking-bubble1 {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 40%;
+    width: 120px;
+    height: 120px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: calc(25% - 8px);
+    left: calc(50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.thinking-bubble1{
+    top: calc(25% - -187px);
+    left: calc(50%);
+}
+
+.thinking-bubble::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    color: red;
+    bottom: 0;
+    left: 0;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0);
   }
+  
+
 
   

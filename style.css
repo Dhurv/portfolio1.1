@@ -10,7 +10,7 @@ body{
 .banner {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom right, #4e44a3, #3498db);;
+    background: linear-gradient(to bottom right, #4e44a3, #3498db);
     color: white;
     display: flex;
     font-size: 24px;
@@ -40,7 +40,7 @@ body{
     letter-spacing: 2px; /* Adjust to stretch the letters a little */
     display: inline-block; /* Allow for scaling using transform */
     background-color: transparent;
-  border: none;
+    border: none;
     transform: scaleY(1.2); /* Adjust the scale factor for horizontal stretching */
     
 }
@@ -56,44 +56,26 @@ body{
     transform: scaleY(1.2); /* Adjust the scale factor for horizontal stretching */
 }
 
-
-
-.thinking-bubble,.thinking-bubble1 {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 40%;
-    width: 120px;
-    height: 120px;
-    font-size: 16px;
-    cursor: pointer;
-    position: absolute;
-    top: calc(25% - 8px);
-    left: calc(50%);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    opacity: 1;
-    transform: scale(1);
-    z-index: 2;
+.rounded-backgroup{
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #3498db, #4e44a3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 
-.thinking-bubble1{
-    top: calc(25% - -187px);
-    left: calc(50%);
+.my-avatar{
+    margin-top: -5px;
+    justify-content: center;
+    border-radius: 50%;
+    height: 280px;
+    width: 280px;
 }
 
-.thinking-bubble::after{
-    content: "";
-    width: 10px;
-    height: 10px;
-    color: red;
-    bottom: 0;
-    left: 0;
-}
 
-.hidden {
-    opacity: 0;
-    transform: scale(0);
-  }
   
 
 

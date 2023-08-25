@@ -59,20 +59,20 @@ body{
 .rounded-backgroup{
     width: 300px;
     height: 300px;
-    background-color: purple;
     border-radius: 50%;
     background: linear-gradient(to bottom right, #3498db, #4e44a3);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .my-avatar{
-    margin-top: -5px;
+    margin-top: -25px;
     justify-content: center;
     border-radius: 50%;
-    height: 280px;
-    width: 280px;
+    height: 326px;
+    width: 309px;
 }
 
 

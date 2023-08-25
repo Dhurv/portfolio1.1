@@ -89,7 +89,7 @@ body{
     width: 500px;
     height: 570px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
 
     gap: 1.5rem;
@@ -112,7 +112,8 @@ body{
 }
 .heading{
     font-size: 2rem;
-    color: #ff9900;
+    color: #edc487;
+    margin: 0 auto;
 }
 
 .txtDescription{

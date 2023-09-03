@@ -173,6 +173,10 @@ body{
     position: relative;
     box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.3);
     transition: all .3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     
 }
 
@@ -191,17 +195,21 @@ body{
     border-radius: 23px 23px 0 0;
 }
 
-.profile-pic{
+.container .profile-pic{
+    position: relative;
     height: 218px;
     width: 341px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    border-radius: 50%;
 }
 
 .img-card{
     height: 142px;
     width: 142px;
-
+    z-index: 2;
+    border-radius: 50%;
 }
   

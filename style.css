@@ -97,3 +97,53 @@ body{
 .second{
     background-color: #3498db;
 }
+.btns{
+    width: 300px;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.btns a {
+    text-decoration: none;
+    color: rgb(214, 211, 211);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px 16px;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+
+.btns a:nth-child(1) {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: var(--secondary);
+}
+
+
+.btns a:nth-child(2) {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid var(--secondary);
+}
+.btns a:nth-child(1):hover,
+.btns a:nth-child(1):active{
+    text-decoration: none;
+    outline: none;
+    color: #ff9900;
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+}
+
+.btns a:hover:nth-child(2),
+.btns a:active:nth-child(2) {
+    text-decoration: none;
+    outline: none;
+    color: #ff9900;
+    background-color: var(--secondary);
+}

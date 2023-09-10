@@ -10,7 +10,7 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'EB Garamond', serif;
     font-family: 'Roboto Serif', serif;
     
@@ -219,4 +219,47 @@ body{
 
 .social a:hover {
     transform: translateY(5px);
+}
+
+.footer{
+    width: 100vw;
+    background-color:  #ff9900;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 20px 20px 0 0;
+}
+
+.footer .right,
+.footer .left{
+    height: 100%;
+    width: 40%;
+}
+
+.email,
+.phone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right h2{
+    font-weight: 500;
+    letter-spacing: .5rem;
+    margin-bottom: 15px;
+}
+
+.email h4,
+.phone h4{
+    font-weight: 500;
+    letter-spacing: .5rem;
+    margin-bottom: 15px;
+}
+
+
+.email h6,
+.phone h6{
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 15px;
 }

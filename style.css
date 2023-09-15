@@ -87,7 +87,7 @@ body{
 /* Project Section start */
 
 .projects{
-    width: 100vw;
+    width: calc(100vw - 18px);
     height: 100vh;
 }
 
@@ -218,11 +218,11 @@ body{
 }
 
 .social a:hover {
-    transform: translateY(5px);
+    transform: translateY(-5px);
 }
 
 .footer{
-    width: 100vw;
+    width: calc(100vw - 18px);
     background-color:  #ff9900;
     display: flex;
     justify-content: space-between;
@@ -262,4 +262,27 @@ body{
     font-weight: 500;
     letter-spacing: .2rem;
     margin-bottom: 15px;
+}
+
+.social-links{
+    width: 100%;
+    padding: 0.7rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    height: 100%;
+    font-size: 25px;
+    margin-left: 1rem;
+    
+    transition: .3s all;
+}
+
+.social-links a i {
+    color: var(--primary);
+}
+
+.social-links a:hover{
+    color: var(--secondary);
+    transform: translateY(-15px);
 }
